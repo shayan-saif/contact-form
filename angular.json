@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TW_Contact": {
+    "ContactForm": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TW_Contact",
+            "outputPath": "dist/ContactForm",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "TW_Contact:build:production"
+              "browserTarget": "ContactForm:build:production"
             },
             "development": {
-              "browserTarget": "TW_Contact:build:development"
+              "browserTarget": "ContactForm:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TW_Contact:build"
+            "browserTarget": "ContactForm:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "TW_Contact"
+  "defaultProject": "ContactForm"
 }

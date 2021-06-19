@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TW_Contact'`, () => {
+  it(`should have as title 'ContactForm'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TW_Contact');
+    expect(app.title).toEqual('ContactForm');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('TW_Contact app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ContactForm app is running!');
   });
 });
