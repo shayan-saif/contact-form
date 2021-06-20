@@ -15,7 +15,7 @@
             (click)="onSelect(i)">
             <div class="flex">
               <div class="px-3">
-                <i class="material-icons text-xs {{ (contact === selected && !contact.online) && 'text-gray-400' }}"
+                <i class="material-icons text-xs {{ (contact === selected && !contact.online) ? 'text-white' : '' }}"
                   [class.text-green-600]="contact.online" [class.text-gray-200]="!contact.online">circle</i>
               </div>
               <div [class.font-semibold]="contact === selected">
