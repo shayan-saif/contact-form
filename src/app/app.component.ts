@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ContactForm';
+  darkMode = false;
+  toggleLabel: string = 'Dark mode';
+
+  toggleDark(): void {
+    this.darkMode = !this.darkMode;
+    if (this.toggleLabel === 'Dark mode') {
+      this.toggleLabel = 'Light mode';
+    } else {
+      this.toggleLabel = 'Dark mode';
+    }
+  }
 }

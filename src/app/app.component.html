@@ -1,12 +1,17 @@
-<div class="min-h-screen bg-gray-200 px-4 py-12">
-  <div class="max-w-md mx-auto">
-    <div class="mb-12 text-gray-500 font-mono">
-      <div>
-        Sample Contact form, inspired by:
+<div [class.dark]="darkMode">
+  <div class="min-h-screen bg-gray-200 px-4 py-12 dark:bg-gray-700">
+    <div class="max-w-md mx-auto">
+      <div class="mb-12 text-gray-500 font-mono dark:text-gray-300">
+        <div>
+          Sample Contact form, inspired by:
+        </div>
+        <div><a class="text-blue-500 font-semibold hover:underline dark:text-blue-400"
+            href="https://www.refactoringui.com/book">Refactoring UI</a></div>
       </div>
-      <div><a class="text-blue-500 font-semibold hover:underline"
-          href="https://www.refactoringui.com/book">Refactoring UI</a></div>
+      <div class="flex justify-end py-2 mb-3">
+        <app-toggle [label]="toggleLabel" (toggle)="toggleDark()"></app-toggle>
+      </div>
+      <app-contacts></app-contacts>
     </div>
-    <app-contacts></app-contacts>
   </div>
 </div>

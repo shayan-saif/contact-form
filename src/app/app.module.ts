@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ToggleComponent } from './shared/toggle/toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactsComponent
+    ContactsComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,
