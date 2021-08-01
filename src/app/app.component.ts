@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   title = 'ContactForm';
   mode = {
     dark: false,
-    label: 'Light'
+    label: 'Dark Mode'
   }
 
   ngOnInit(): void {
