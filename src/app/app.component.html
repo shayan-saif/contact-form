@@ -1,4 +1,4 @@
-<div [class.dark]="darkMode">
+<div [class.dark]="mode.dark">
   <div class="min-h-screen bg-gray-200 px-4 py-12 dark:bg-gray-700">
     <div class="max-w-md mx-auto">
       <div class="mb-12 text-gray-500 font-mono dark:text-gray-300">
@@ -9,7 +9,7 @@
             href="https://www.refactoringui.com/book">Refactoring UI</a></div>
       </div>
       <div class="flex justify-end py-2 mb-3">
-        <app-toggle [label]="toggleLabel" (toggle)="toggleDark()"></app-toggle>
+        <app-toggle [label]="mode.label" (toggle)="toggleDark()"></app-toggle>
       </div>
       <app-contacts></app-contacts>
     </div>
